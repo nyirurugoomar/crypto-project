@@ -22,7 +22,7 @@ function Navbar() {
       </div>
     {/* menu icon */}
     <div onClick={handleNav} className='block md:hidden cursor-pointer z-10'>
-      {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+      {nav ? <AiOutlineClose size={50} /> : <AiOutlineMenu size={50} />}
     </div>
 
     {/* mobile menu */}
