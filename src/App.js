@@ -17,7 +17,7 @@ function App() {
   useEffect(()=>{
     axios.get(url).then((response)=>{
        setCoins(response.data)
-      //  console.log(response.data)
+      //  console.log(response.data) you can also excute in coinsersch.jsx it's the same
     })
   },[url])
 

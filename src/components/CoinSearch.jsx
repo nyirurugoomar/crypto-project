@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import {AiOutlineStar} from 'react-icons/ai';
-import { Sparklines, SparklinesLine } from 'react-sparklines';
 import CoinItem from './CoinItem';
 
 const CoinSearch = ({coins}) => {
@@ -18,28 +16,28 @@ const CoinSearch = ({coins}) => {
                  placeholder='Search a coin' />
              </form>
          </div>
-         <table>
+         <table className='w-full border-collapse text-center'>
              <thead> 
-                 <tr>
+                 <tr className='border-b'>
                      <th></th>
-                     <th>#</th>
-                     <th>coin</th>
+                     <th className='px-4'>#</th>
+                     <th className='text-left'>Coin</th>
                      <th></th>
                      <th>price</th>
                      <th>24h</th>
-                     <th>24h volume</th>
-                     <th>mkt</th>
+                     <th className='hidden md:table-cell'>24h volume</th>
+                     <th className='hidden sm:table-cell'>mkt</th>
                      <th>last 7 Days</th>
                  </tr>
              </thead>
              <tbody>
                  {coins.filter((value)=>{
                      if (SearchText===''){
-                         return value
+                         return value;
                      }else if(
                           value.name.toLowerCase().includes(SearchText.toLowerCase())
                      ){
-                         return value
+                         return value;
                      }
                  }).map((coin)=>(
                      <CoinItem key={coin.id} coin={coin}/>
