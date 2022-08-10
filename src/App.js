@@ -7,6 +7,7 @@ import Signin from "./routers/Signin";
 import Signup from "./routers/Signup";
 import Account from "./routers/Account"
 import axios from 'axios' 
+
  
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
          <Route path='/signin' element ={<Signin />} />
          <Route path='/signup' element ={<Signup />} />
          <Route path='/account' element ={<Account />} />
+         
       </Routes>
     </ThemeProvider>
   );

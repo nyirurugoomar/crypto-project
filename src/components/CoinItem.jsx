@@ -32,7 +32,7 @@ const CoinItem = ({coin}) => {
                              </Sparklines>
                          </td>
                          
-                     </tr>
+    </tr>
   )
 }
 
